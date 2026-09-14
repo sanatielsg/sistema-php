@@ -10,3 +10,17 @@ Requisitos:
 * Servidor HTTP;
 * Banco de dados MySQL/MariaDB 10.4
 * Conexão PDO.
+
+Funcionalidades:
+* Login;
+* Recuperação de senha;
+* Usuários;
+* Empresas;
+* Produtos;
+* Clientes;
+* Estoques;
+* Caixas;
+* Bancos;
+* Pedidos de Venda;
+* Contas a Receber;
+* Tesouraria;
