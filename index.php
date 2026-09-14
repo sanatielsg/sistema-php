@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Pedidos e Estoque</title>
-    <script language=javascript src=index.js></script>
+    <script language="javascript" src="index.js"></script>
 </head>
 <body bgcolor="#ffffaa">
     <div>
