@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+    $page = $_REQUEST['page'] ?? '';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,32 +11,67 @@
     <script language="javascript" src="index.js"></script>
 </head>
 <body bgcolor="#ffffaa">
-    <div>
-        <ul>
-            <li><a href="?op=login">Login</a></li>
-            <li><a href="?op=rec-senha">Recuperação de senha</a></li>
-            <li><a href="?op=cad-usuario">Cadastros de Usuários</a></li>
-            <li><a href="?op=cad-empresa">Cadastros de Empresas</a></li>
-        </ul>
-    </div>        
-    <div style="display:none;">
-        <ul>
-            <li><a href="?op=cad-produto">Cadastros de Produtos</a></li>
-            <li><a href="?op=cad-cliente">Cadastros de Clientes</a></li>
-            <li><a href="?op=cad-caixa">Cadastros de Caixas</a></li>
-            <li><a href="?op=cad-banco">Cadastros de Bancos</a></li>
-        </ul> 
-    </div>
-    <div style="display:none;">
-        <ul>
-            <li><a href="?op=lan-estoque">Lançamentos de Estoques</a></li>
-            <li><a href="?op=lan-caixa">Lançamentos de Caixas</a></li>
-            <li><a href="?op=lan-banco">Lançamentos de Bancos</a></li>
-            <li><a href="?op=pedido-venda">Lançamentos Pedidos de Venda</a></li>
-            <li><a href="?op=lan-cr">Lançamentos de Contas a Receber</a></li>
-        </ul>
-    </div>
-    <hr>
+<?php
+    if ($page === 'login') 
+    {
+?>
+    Login
+<?php 
+    }
+    else if ($page === 'rec-senha') 
+    {
+?>
+    Recuperar Senha   
+<?php 
+    }
+    else if ($page === 'cad-usuario') 
+    {
+?>
+    Cadastro de Usuários
+<?php 
+  } else if ($page === 'cad-empresa') {
+?>
+    Cadastro de Empresas
+<?php 
+  } else if ($page === 'cad-produto') {
+?>
+    Cadastro de Produtos
+<?php 
+  } else if ($page === 'cad-cliente') {
+?>
+    Cadastro de Clientes
+<?php 
+  } else if ($page === 'cad-caixa') {
+?>
+    Cadastro de Caixas
+<?php 
+  } else if ($page === 'cad-banco') {
+?>
+    Cadastro de Bancos
+<?php 
+  } else if ($page === 'lan-estoque') {
+?>
+    Lançamentos de Estoque
+<?php 
+  } else if ($page === 'lan-caixa') {
+?>
+    Lançamentos de Caixas
+<?php 
+  } else if ($page === 'lan-banco') {
+?>
+    Lançamentos de Bancos    
+<?php 
+  } else if ($page === 'lan-pedido-venda') {
+?>
+    Lançamentos de Pedidos de Venda
+<?php 
+  } else if ($page === 'lan-cr') {
+?>
+    Lançamentos de Contas a Receber
+<?php
+  } else echo 'Requisição Inválida!';
+?>  
+
 </body>
 </html>
 
